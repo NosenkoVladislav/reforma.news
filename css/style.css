@@ -16,6 +16,7 @@ body {
 
 .navbar {
 	background-color: #232323;
+	border: none;
 	border-radius: 0;
 	margin-bottom: 0;
 }
@@ -31,6 +32,7 @@ body {
 
 .nav-item {
 	margin: 0 15px;
+	box-sizing: border-box;
 }
 
 .nav li a {
@@ -38,6 +40,7 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 500;
+	position: relative;
 }
 
 .nav li a:hover, .nav li a:focus {
@@ -88,8 +91,35 @@ ul .custom-item a:hover, ul .custom-item a:focus {
 
 .content {
 	background-color: #eaeaea;
-	padding: 50px 0;
+	padding-bottom: 50px;
 }
+
+.page-nav {
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.page-item {
+	display: inline-block;
+}
+
+.page-item a {
+	color: #a0a0a0;
+	text-decoration: none;
+}
+
+.page-item:last-child a {
+	color: #000;
+}
+
+.page-item:last-child i {
+	display: none;
+}
+
+.page-arrow {
+	margin: 0 4px;
+}
+
 
 .profile {
 	background-color: #fff;
@@ -139,6 +169,7 @@ ul .custom-item a:hover, ul .custom-item a:focus {
 	font-weight: 700;
 	margin: 5px 0;
 }
+
   /************/
  /*pagination*/
 /************/
@@ -176,10 +207,10 @@ ul .custom-item a:hover, ul .custom-item a:focus {
 	background-color: #43a4f4;
 }
 
-
   /**************/
  /*left sidebar*/
 /**************/
+
 .filters {
 	background-color: #fff;
 }
@@ -288,14 +319,6 @@ input[type="checkbox"].ios8-switch:checked + label:before {
     background: #55D069;
 }
 
-/*.left-label {
-	float: left;
-}
-
-.right-input {
-	float: right;
-}*/
-
 .ios-checkbox {
 	margin: 7px 0;
 }
@@ -383,3 +406,4 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	text-decoration: underline;
 	font-weight: 300;
 }
+
