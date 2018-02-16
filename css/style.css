@@ -176,6 +176,7 @@ ul .custom-item a:hover, ul .custom-item a:focus {
 	background-color: #43a4f4;
 }
 
+
   /**************/
  /*left sidebar*/
 /**************/
@@ -210,7 +211,7 @@ ul .custom-item a:hover, ul .custom-item a:focus {
 	border-radius: 24px;
 	box-shadow: none;
 	border: 1px solid #cccccc;
-	padding: 5px 15px;
+	padding: 8px 15px;
 }
 
 .dropdown-menu {
@@ -247,14 +248,13 @@ input[type="checkbox"].ios8-switch {
 }
 input[type="checkbox"].ios8-switch + label {
     position: relative;
-    padding: 5px 0 0 50px;
     line-height: 0.6em;
 }
 input[type="checkbox"].ios8-switch + label:before {
     content: "";
     position: absolute;
     display: block;
-    left: 0;
+    right: 0;
     top: 0;
     width: 36px; /* x*5 */
     height: 18px; /* x*3 */
@@ -268,7 +268,7 @@ input[type="checkbox"].ios8-switch + label:after {
     content: "";
     position: absolute;
     display: block;
-    left: 0px;
+    right: 18px;
     top: 0px;
     width: 18px; /* x*3 */
     height: 18px; /* x*3 */
@@ -282,22 +282,26 @@ input[type="checkbox"].ios8-switch + label:hover:after {
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 input[type="checkbox"].ios8-switch:checked + label:after {
-    margin-left: 18px;
+    right: 0;
 }
 input[type="checkbox"].ios8-switch:checked + label:before {
     background: #55D069;
 }
 
-.left-label {
+/*.left-label {
 	float: left;
 }
 
 .right-input {
 	float: right;
-}
+}*/
 
 .ios-checkbox {
 	margin: 7px 0;
+}
+
+.ios-checkbox label {
+	width: 100%;
 }
 
 .personal {
