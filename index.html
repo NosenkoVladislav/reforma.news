@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>reforma.news</title>
+	<title>all_stories.news</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -45,7 +48,7 @@
 	<section class="content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-nav sm-text">
 						<div class="page-item grey-text md-text">
 							<a href="#">Головна</a>
@@ -76,82 +79,51 @@
 						<div class="white-wrapper">
 							<div class="region-select">
 								<div class="filter-name lg-text">Область</div>
-								<div class="dropdown">
-									<button class="dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown">
-										<span class="name-sel">Дніпропетровська</span>
-										<span class="num sm-text grey-text">(63)</span>
-										<span class="drop-arrow"><i class="fa fa-lg fa-angle-down" aria-hidden="true"></i></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">Чернігівська</a></li>
-										<li><a href="#">Київська</a></li>
-										<li><a href="#">Луганська</a></li>
-									</ul>
-								</div>
+								<select class="js-select filter-select" name="state">
+									<option value="AL">Дніпропетровська</option>
+									<option value="AL">Київська</option>
+									<option value="WY">Київська</option>
+								</select>
 								<span class="delete-sel grey-text">
 									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
 								</span>
 								<div class="add-more">Додати ще +</div>
 							</div>
-							<div class="group-select">
+							<div class="group-select clearfix">
 								<div class="filter-name lg-text">ОТГ</div>
-								<div class="dropdown">
-									<button class="dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown">
-										<span class="name-sel">Оберіть громаду</span>
-										<span class="drop-arrow"><i class="fa fa-lg fa-angle-down" aria-hidden="true"></i></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">ДужеДовгаНазваГромадиДляПеревірки</a></li>
-										<li><a href="#">Київська</a></li>
-										<li><a href="#">Луганська</a></li>
-									</ul>
-								</div>
+								<select class="js-select filter-select" name="state">
+									<option value="AL">Дніпропетровська</option>
+									<option value="AL">Київська</option>
+									<option value="WY">Київська</option>
+								</select>
 								<span class="delete-sel grey-text">
 									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
 								</span>
 
-								<div class="dropdown">
-									<button class="dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown">
-										<span class="name-sel">Оберіть громаду</span>
-										<span class="drop-arrow"><i class="fa fa-lg fa-angle-down" aria-hidden="true"></i></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">ДужеДовгаНазваГромадиДляПеревірки</a></li>
-										<li><a href="#">Київська</a></li>
-										<li><a href="#">Луганська</a></li>
-									</ul>
-								</div>
+								<select class="js-select filter-select" name="state">
+									<option value="AL">Дніпропетровська</option>
+									<option value="AL">Київська</option>
+									<option value="WY">Київська</option>
+								</select>
 								<span class="delete-sel grey-text">
 									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
 								</span>
-								<div class="dropdown">
-									<button class="dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown">
-										<span class="name-sel">Оберіть громаду</span>
-										<span class="drop-arrow"><i class="fa fa-lg fa-angle-down" aria-hidden="true"></i></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">ДужеДовгаНазваГромадиДляПеревірки</a></li>
-										<li><a href="#">Київська</a></li>
-										<li><a href="#">Луганська</a></li>
-									</ul>
-								</div>
+								<select class="js-select filter-select" name="state">
+									<option value="AL">Дніпропетровська</option>
+									<option value="AL">Київська</option>
+									<option value="WY">Київська</option>
+								</select>
 								<span class="delete-sel grey-text">
 									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
 								</span>		
 							</div>
-							<div class="category-select">
+							<div class="category-select clearfix">
 								<div class="filter-name lg-text">Категорія</div>
-								<div class="dropdown">
-									<button class="dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown">
-										<span class="name-sel">Оберіть громаду</span>
-										<span class="drop-arrow"><i class="fa fa-lg fa-angle-down" aria-hidden="true"></i></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">ДужеДовгаНазваГромадиДляПеревірки</a></li>
-										<li><a href="#">Київська</a></li>
-										<li><a href="#">Луганська</a></li>
-									</ul>
-								</div>
+								<select class="js-select filter-select" name="state">
+									<option value="AL">Дніпропетровська</option>
+									<option value="AL">Київська</option>
+									<option value="WY">Київська</option>
+								</select>
 								<span class="delete-sel grey-text">
 									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
 								</span>
@@ -359,6 +331,11 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slick-slider.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
