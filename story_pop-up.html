@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>story_pop-up</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_suspilne.svg" alt="Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#">історії</a></li>
+                    <li class="nav-item"><a href="#">експерти</a></li>
+                    <li class="nav-item"><a href="#">змі</a></li>
+                    <li class="nav-item"><a href="#">stock</a></li>
+                    <li class="nav-item"><a href="#">база документів</a></li>
+                    <li class="nav-item custom-item"><a href="#">Створити історію</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href=""><i class="fa fa-lg fa-search" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-lg fa-user-o" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="documents">
+        <div class="container">
+            <div class="row">
+                <div class="doc-tb-wrapper">
+                    <div class="table-responsive">
+                        <table class="table">
+                        <caption>
+                            <div class="doc-tb-brand">
+                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                <span>Документи</span>
+                            </div>
+                            <div class="doc-btn-wrapper">
+                                <button class="doc-tb-btn add-doc">
+                                    <span class="hidden-xs hidden-sm">Додати папку</span>
+                                    <i class="fa fa-folder hidden-md hidden-lg" aria-hidden="true"></i>
+                                </button>
+                                <button class="doc-tb-btn doc-file">
+                                    <span class="hidden-xs hidden-sm">Додати файл</span>
+                                    <i class="fa fa-file hidden-md hidden-lg" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </caption>
+                        <thead>
+
+                            <tr class="table-head">
+                                <th></th>
+                                <th></th>
+                                <th>Назва</th>
+                                <th class="hidden-xs hidden-sm">Тип</th>
+                                <th class="hidden-xs hidden-sm">Розмір</th>
+                                <th class="hidden-xs hidden-sm">Дата</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="folder-icon"><i class="fa fa-folder" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Намальована ліпнина</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Папка</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="file-icon"><i class="fa fa-file" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Намальована ліпнина</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Документ</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="file-icon"><i class="fa fa-file" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Намальована ліпнина</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Папка</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="file-icon"><i class="fa fa-file" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Намальована ліпнина</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Папка</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="folder-icon"><i class="fa fa-folder" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Намальована ліпнина</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Папка</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                            <tr class="table-row">
+                                <th class="th-check"><input type="checkbox"></th>
+                                <th class="th-icon"><span class="folder-icon"><i class="fa fa-folder" aria-hidden="true"></i></span></th>
+                                <th class="th-name ellipsis"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam debitis deleniti magni modi quasi. Accusamus aspernatur deleniti, dolorum eligendi excepturi exercitationem illo, impedit minus odit praesentium quo soluta velit.</span></th>
+                                <th class="th-type hidden-xs hidden-sm"><span>Папка</span></th>
+                                <th class="th-size hidden-xs hidden-sm"><span>7.2 Mb</span></th>
+                                <th class="th-date hidden-xs hidden-sm"><span>8 червня, 2018</span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <button class="doc-tb-btn upload-btn">Завантажити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stock</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <section class="stock-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div class="filters clearfix">
+                        <div class="white-wrapper">
+                            <div class="date-select clearfix">
+                                <div class="date-filter-block clearfix">
+                                    <div class="filter-name lg-text">Діапазон дат</div>
+                                    <span class="date-pic">з</span>
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+												<i class="fa fa-lg fa-calendar-plus-o" aria-hidden="true"></i>
+											</span>
+                                        </div>
+                                    </div>
+                                    <span class="delete-sel grey-text">
+										<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+									</span>
+                                </div>
+                                <div class="date-filter-block clearfix">
+                                    <span class="date-pic">по</span>
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker2'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+												<i class="fa fa-lg fa-calendar-plus-o" aria-hidden="true"></i>
+											</span>
+                                        </div>
+                                    </div>
+                                    <span class="delete-sel grey-text">
+										<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+									</span>
+                                </div>
+                            </div>
+                            <div class="region-select">
+                                <div class="filter-name lg-text">Область</div>
+                                <select class="js-select filter-select" name="state">
+                                    <option value="AL">Дніпропетровська</option>
+                                    <option value="AL">Київська</option>
+                                    <option value="WY">Київська</option>
+                                </select>
+                                <span class="delete-sel grey-text">
+									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+								</span>
+                                <div class="add-more">Додати ще +</div>
+                            </div>
+                            <div class="group-select clearfix">
+                                <div class="filter-name lg-text">ОТГ</div>
+                                <select class="js-select filter-select" name="state">
+                                    <option value="AL">Дніпропетровська</option>
+                                    <option value="AL">Київська</option>
+                                    <option value="WY">Київська</option>
+                                </select>
+                                <span class="delete-sel grey-text">
+									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+								</span>
+
+                                <select class="js-select filter-select" name="state">
+                                    <option value="AL">Дніпропетровська</option>
+                                    <option value="AL">Київська</option>
+                                    <option value="WY">Київська</option>
+                                </select>
+                                <span class="delete-sel grey-text">
+									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+								</span>
+                                <select class="js-select filter-select" name="state">
+                                    <option value="AL">Дніпропетровська</option>
+                                    <option value="AL">Київська</option>
+                                    <option value="WY">Київська</option>
+                                </select>
+                                <span class="delete-sel grey-text">
+									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+								</span>
+                            </div>
+                            <div class="category-select clearfix">
+                                <div class="filter-name lg-text">Категорія</div>
+                                <select class="js-select filter-select" name="state">
+                                    <option value="AL">Дніпропетровська</option>
+                                    <option value="AL">Київська</option>
+                                    <option value="WY">Київська</option>
+                                </select>
+                                <span class="delete-sel grey-text">
+									<i class="fa fa-lg fa-times" aria-hidden="true"></i>
+								</span>
+                                <div class="add-more">Додати ще +</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="keywords-block">
+                        <div class="lg-text">Пошук по ключовим словам</div>
+                        <div class="keywords-wrapper">
+                            <span class="keyword">суспільство</span>
+                            <span class="keyword">історія</span>
+                            <span class="keyword">майдан</span>
+                            <span class="keyword">незалежність</span>
+                            <span class="keyword">рада</span>
+                            <span class="keyword">стратегії</span>
+                            <span class="keyword">суспільство</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                    <div class="st-title lg-text">Медіа матеріали</div>
+                    <form action="" class="st-form clearfix">
+                        <input type="text" class="st-input" placeholder="Введіть текст...">
+                        <button class="st-search-btn"><i class="fa fa-lg fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <div class="st-tabs-wrapper">
+                        <a href='#' class="tab st-tab"><i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i> Відео</a>
+                        <a href='#' class="tab st-tab"><i class="fa fa-lg fa-camera" aria-hidden="true"></i> Фото</a>
+                        <a href='#' class="tab st-tab"><i class="fa fa-lg fa-files-o" aria-hidden="true"></i></i> Усе</a>
+                    </div>
+                    <button class="st-add-btn">Додати матеріали</button>
+                    <div class="row">
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-caret-square-o-right" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="media-item st-media-item">
+                                    <div class="media-block">
+                                        <img src="img/profile-avatar.png" alt="" class="media-img">
+                                        <div class="media-blur"></div>
+                                    </div>
+                                    <div class="st-media-text sm-text">
+                                        Політика, громада, людина, історія, суспільство, експерти, культура
+                                        <div class="st-media-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>16 ноября 2017</span>
+                                        </div>
+                                    </div>
+                                    <span class="st-type-icon">
+                                        <i class="fa fa-lg fa-camera" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="save-btn">
+                                        <a href="#"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    <nav aria-label="Page navigation" class="pages stock-pages">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <i class="fa fa-lg fa-angle-left" ></i>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
