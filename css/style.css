@@ -601,8 +601,8 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	z-index: 10;
 }
 
-.slick-prev,
-.slick-next {
+.slider-control .slick-prev,
+.slider-control .slick-next {
 	position: absolute;
 	top: 58%;
 	text-align: center;
