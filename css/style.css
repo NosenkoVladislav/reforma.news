@@ -971,7 +971,7 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 }
 
 .th-name {
-	widows: 40%;
+	width: 40%;
 }
 
 .th-type, .th-size, .th-date {
@@ -1079,7 +1079,7 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	.st-add-btn {
 		display: inline-block;
 		font-size: 1.2em;
-		padding: 10px 25px;
+		padding: 8px 25px;
 		background-color: #43a4f4;
 		color: #fff;
 		border:none;
@@ -1089,7 +1089,7 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	
 	.st-media-item {
 		width: 100%;
-		height: 200px;
+		max-height: 200px;
 		overflow: hidden;
 		margin: 10px 0;
 		padding: 0;
@@ -1321,7 +1321,71 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	margin-top: 8px;
 }
 
+  /****************/
+ /*stock_one page*/
+/****************/
 
+.stock-open {
+	padding-bottom: 50px;
+}
+
+.st-open-img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.open-img {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+}
+
+.st-open-descr {
+	padding-left: 15px;
+}
+
+.st-info {
+	margin: 20px 0;
+}
+
+.st-icon {
+	color: #43a4f4;
+}
+
+.st-upload {
+	float: none;
+}
+
+.st-keywords-block {
+	background-color: transparent;
+	padding: 0;
+}
+
+.st-keywords-block .keywords-wrapper .keyword {
+	margin-right: 10px;
+}
+
+.similar-materials {
+	padding: 0 15px;
+}
+
+.similar-title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.st-show-more {
+	float: none;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid #43a4f4;
+	color: #000;
+	margin: 0 auto;
+	margin-top: 20px;
+}
 
 
   /***************/
@@ -1337,6 +1401,7 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	.navbar-right li a {
 		padding: 14px 15px;
 	}
+
 	  /******************/
  	 /*open_story page*/
 	/******************/
@@ -1356,6 +1421,19 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	.attaches-control .prev-ctrl {
 		left: -2.5%
 	}
+
+	  /************/
+	 /*stock page*/
+	/************/
+
+	.st-input {
+		max-width: 90%;
+	}
+
+	.st-search-btn {
+		width: auto;
+	}
+
 }
 
 @media only screen and (max-width : 992px) {
@@ -1375,7 +1453,6 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	  /******************/
 	 /*all_stories page*/
 	/******************/
-	
 
 	.story-img {
 		height: 145px;
@@ -1393,7 +1470,6 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 
 	.small-tabs {
 		font-size: 0.75em;
-		
 	}
 
 	.sm-tab {
@@ -1402,9 +1478,10 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 		line-height: 26px;
 	}
 
-	  /******************/
+	  /*****************/
  	 /*open_story page*/
-	/******************/
+	/*****************/
+
 	.attach-descr {
 		font-size: 0.8em;
 	}
@@ -1442,6 +1519,30 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 
 	.upload-btn {
 		padding: 5px 20px;
+	}
+
+	  /************/
+	 /*stock page*/
+	/************/
+
+	.st-input {
+		max-width: 85%;
+	}
+
+	.st-search-btn {
+		width: auto;
+	}
+
+	.st-tabs-wrapper {
+		width: 55%;
+	}
+
+	  /****************/
+	 /*stock_one page*/
+	/****************/
+
+	.st-open-img {
+		margin-bottom: 20px;
 	}
 
 }
@@ -1534,6 +1635,21 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 		font-size: 1em;
 	}
 
+	  /************/
+	 /*stock page*/
+	/************/
+	.st-input {
+		max-width: 85%;
+	}
+
+	.st-search-btn {
+		width: auto;
+	}
+
+	.st-tab i {
+		display: block;
+		padding-top: 15px;
+	}
 
 }
 
@@ -1619,6 +1735,29 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 		padding: 0;
 	}
 
+	  /************/
+	 /*stock page*/
+	/************/
+
+	.st-input {
+		max-width: 80%;
+	}
+	.st-tabs-wrapper {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.st-add-btn {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.media-item:hover .st-type-icon{
+		bottom: 45%;
+		transition: bottom 0.5s;
+	}
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -1629,5 +1768,14 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 	.madia-element {
 		padding: 5px;
 		line-height: 150px;
+	}
+
+	  /************/
+	 /*stock page*/
+	/************/
+
+	.media-item:hover .st-type-icon{
+		bottom: 75%;
+		transition: bottom 0.5s;
 	}
 }
